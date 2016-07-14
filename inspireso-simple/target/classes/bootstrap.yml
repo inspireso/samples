@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    config:
+      uri: ${SPRING_CONFIG_URI:http://192.168.8.104:8888}
+      name: ${spring.application.name:simple.service}
+  jackson:
+    deserialization:
+      FAIL_ON_UNKNOWN_PROPERTIES: false
+    serialization:
+      ORDER_MAP_ENTRIES_BY_KEYS: true
+      INDENT_OUTPUT: true
+    date-format: yyyy-MM-dd HH:mm:ssZ
+    joda-date-time-format: yyyy-MM-dd HH:mm:ssZ
+    time-zone: GMT+8
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: ${SPRING_REGISTRY_URI:${spring.application.registry}}/eureka/
+  instance:
+    prefer-ip-address: true
