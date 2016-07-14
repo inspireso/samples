@@ -81,8 +81,16 @@
 
     <repositories>
         <repository>
+            <id>sunisco-all</id>
+            <name>Sunisco Repository</name>
+            <url>http://192.168.8.63:8081/nexus/content/groups/public</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
             <id>inspireso-all</id>
-            <name>inspireso Repository</name>
+            <name>Inspireso Repository</name>
             <url>http://repo.inspireso.org/nexus/content/groups/public</url>
             <snapshots>
                 <enabled>true</enabled>
