@@ -1,0 +1,28 @@
+{
+  "name": "agency-assets",
+  "version": "0.0.1",
+  "description": "",
+  "author": "lan.xinen@inspireso.org",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=6",
+    "npm": ">=3.8"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.5.1"
+  },
+  "scripts": {
+    "build:demo1": "webpack --config demo1.config.js",
+    "build:demo2": "webpack --config demo2.config.js"
+  }
+}

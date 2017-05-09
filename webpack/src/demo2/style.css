@@ -1,0 +1,12 @@
+/*
+ * Copyright (c) 2017 Inspireso and/or its affiliates.
+ * Licensed under the MIT License.
+ */
+
+h1 {
+    color: #ffa70b;;
+}
+
+.nav_bg {
+    background: url("../assets/images/nav_bg.jpg") center no-repeat;
+}
