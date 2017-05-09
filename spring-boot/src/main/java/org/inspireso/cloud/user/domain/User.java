@@ -1,15 +1,19 @@
-package org.inspireso.cloud.simple.domain;
+package org.inspireso.cloud.user.domain;
 
-import com.google.common.base.Objects;
+import com.google.common.base.MoreObjects;
 
 /**
  * Created by lanxe on 2016/7/13.
  */
-public class Customer {
+public class User {
     private String id;
     private String name;
     private int age;
     private String picture;
+    private String tel;
+    private String sex;
+
+    private String address;
 
     public String getId() {
         return id;
@@ -43,9 +47,33 @@ public class Customer {
         this.picture = picture;
     }
 
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     @Override
     public String toString() {
-        return Objects.toStringHelper(this)
+        return MoreObjects.toStringHelper(this)
                 .add("id", id)
                 .add("name", name)
                 .add("age", age)

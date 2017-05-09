@@ -1,0 +1,10 @@
+server.port: 8081
+
+spring:
+  application:
+    name: SERVICE.CUSTOMER
+    registry: http://192.168.8.104:8762
+
+# logging
+application.welcome: Welcome
+eureka.client.registerWithEureka: true

@@ -1,0 +1,26 @@
+server.port: 8765
+
+application.welcome: Welcome
+eureka.client.registerWithEureka: true
+
+# logging
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
+
+
+spring:
+  application:
+    name: SERVICE.GATEWAY
+    registry: http://192.168.8.104:8762
+
+
+#zuul:
+#  routes:
+#    customer:
+#      path: /SERVICE.CUSTOMER/**
+#      service-id: SERVICE.CUSTOMER
+#    zuulserver:
+#      path: /SERVICE.GATEWAY/**
+#      service-id: SERVICE.GATEWAY
