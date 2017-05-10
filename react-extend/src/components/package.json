@@ -1,0 +1,11 @@
+{
+  "name": "components",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./_index.jsx",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-daterangepicker": "^2.1.25",
+    "react": "^15.3.2"
+  }
+}

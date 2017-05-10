@@ -1,0 +1,6 @@
+{
+  "name": "waiting",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./run.js"
+}

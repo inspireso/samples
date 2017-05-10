@@ -1,0 +1,6 @@
+{
+  "name": "Daterangepicker",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Daterangepicker.jsx"
+}

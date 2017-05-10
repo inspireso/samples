@@ -1,0 +1,30 @@
+{
+  "name": "react-extend",
+  "version": "1.0.4",
+  "description": "react.js extend",
+  "author": "lan.xinen@inspireso.cn",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "inspireso",
+    "react-extend",
+    "react",
+    "extend"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inspireso/samples"
+  },
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "react": "^15.3.2"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "debug": "^2.6.0"
+  },
+  "scripts": {
+  }
+}
