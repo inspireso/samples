@@ -7,10 +7,8 @@
 package org.inspireso.jvm;
 
 /**
- * ClassA
- * @author Pierre-Hugues Charbonneau
- *
+ * @author lanxe
  */
 public interface ClassA {
-	void method(String input);
+    void method(String input);
 }

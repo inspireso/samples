@@ -7,14 +7,12 @@
 package org.inspireso.jvm;
 
 /**
- * ClassAImpl
- * @author Pierre-Hugues Charbonneau
- *
+ * @author lanxe
  */
 public class ClassAImpl implements ClassA {
-	
-	@Override
-	public void method(String name) {
-		// do nothing
-	}
+
+    @Override
+    public void method(String name) {
+        // do nothing
+    }
 }

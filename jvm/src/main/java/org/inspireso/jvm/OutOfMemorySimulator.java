@@ -16,9 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * PermGenRemovalValidator
- *
- * @author Pierre-Hugues Charbonneau
+ * @author lanxe
  */
 public class OutOfMemorySimulator {
 
@@ -72,12 +70,12 @@ public class OutOfMemorySimulator {
 
         for (int i = 0; i < nbIterations; i++) {
 
-            String fictiousClassloaderJAR = "file:" + i + ".jar";
+            String classloaderJAR = "file:" + i + ".jar";
 
-            URL[] fictiousClassloaderURL = new URL[]{new URL(fictiousClassloaderJAR)};
+            URL[] classloaderURL = new URL[]{new URL(classloaderJAR)};
 
             // Create a new classloader instance
-            ClassLoader newClassLoader = new URLClassLoader(fictiousClassloaderURL);
+            ClassLoader newClassLoader = new URLClassLoader(classloaderURL);
 
             // Create a new Proxy instance
             ClassA t = (ClassA) Proxy.newProxyInstance(newClassLoader,
@@ -85,7 +83,7 @@ public class OutOfMemorySimulator {
                     new ClassAInvocationHandler(new ClassAImpl()));
 
             // Add the new Proxy instance to the leaking HashMap
-            classLeakingMap.put(fictiousClassloaderJAR, t);
+            classLeakingMap.put(classloaderJAR, t);
         }
     }
 }
