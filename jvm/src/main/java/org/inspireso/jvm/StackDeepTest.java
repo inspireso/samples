@@ -9,7 +9,7 @@ package org.inspireso.jvm;
 /**
  * @author lanxe
  */
-public class TestStackDeep {
+public class StackDeepTest {
     private static int count = 0;
 
     public static void recursion() {

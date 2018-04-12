@@ -11,7 +11,7 @@ import java.util.Vector;
 /**
  * @author lanxe
  */
-public class TestOom {
+public class OomTest {
 
     /**
      * -Xmx20m -Xms5m -XX:+PrintGCDetails

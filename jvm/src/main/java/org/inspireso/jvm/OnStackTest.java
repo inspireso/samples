@@ -9,7 +9,7 @@ package org.inspireso.jvm;
 /**
  * @author lanxe
  */
-public class TestOnStack {
+public class OnStackTest {
 
     public static class User {
         public int id = 0;

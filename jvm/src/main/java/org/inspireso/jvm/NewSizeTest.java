@@ -9,7 +9,7 @@ package org.inspireso.jvm;
 /**
  * @author lanxe
  */
-public class TestNewSize {
+public class NewSizeTest {
 
     /**
      * -XX:+UseSerialGC -Xmx20m -Xms20m -Xmn1m -XX:SurvivorRatio=2 -XX:+PrintGCDetails

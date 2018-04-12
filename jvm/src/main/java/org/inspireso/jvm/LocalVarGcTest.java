@@ -9,7 +9,7 @@ package org.inspireso.jvm;
 /**
  * @author lanxe
  */
-public class TestLocalVarGc {
+public class LocalVarGcTest {
 
     /**
      * 无法回收 byte 数组
@@ -63,7 +63,7 @@ public class TestLocalVarGc {
      * @param args
      */
     public static void main(String[] args) {
-        TestLocalVarGc ins = new TestLocalVarGc();
+        LocalVarGcTest ins = new LocalVarGcTest();
         System.out.println("##localVarGc1:");
         ins.localVarGc1();
         System.out.println("##localVarGc2:");

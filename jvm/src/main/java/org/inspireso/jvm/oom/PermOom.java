@@ -4,7 +4,7 @@
  *
  */
 
-package org.inspireso.jvm;
+package org.inspireso.jvm.oom;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -17,8 +17,7 @@ import net.sf.cglib.beans.BeanMap;
 /**
  * @author lanxe
  */
-public class TestPerm {
-
+public class PermOom {
     public static class CglibBean {
         /**
          * 实体Object
